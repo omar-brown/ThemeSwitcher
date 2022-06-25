@@ -132,3 +132,17 @@ header {
   border-left: 1px solid var(--border-color);
   padding: 0.5rem;
 }
+
+@keyframes rainbow {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg)
+    }
+}
+.logo:hover {
+    animation: rainbow 1s;
+    animation-iteration-count: infinite;
+    animation-direction: rotate;
+}
